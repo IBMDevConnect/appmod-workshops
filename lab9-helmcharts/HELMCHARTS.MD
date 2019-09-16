@@ -13,6 +13,8 @@ This lab provide an insight on the advantages of using Helm over using Kubernete
 
 * Have a running Kubernetes cluster. See the [IBM Cloud Kubernetes Service](https://cloud.ibm.com/docs/containers/cs_tutorials.html#cs_cluster_tutorial) or [Kubernetes Getting Started Guide](https://kubernetes.io/docs/setup/) for details about creating a cluster.
 
+### Open the Web Terminal in IBM Cloud Kubernetes Cluster page and execute below steps:
+
 ### Install Helm
 
 ```
