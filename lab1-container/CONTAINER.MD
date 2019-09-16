@@ -11,10 +11,13 @@ The first part of this lab, we will run our first container, and learn how to in
 ## Pre-requisites:
 
 1. Install Docker
-  1.1 [Docker for Windows](https://docs.docker.com/v17.09/docker-for-windows/install/)
-  1.2 [Docker for Mac](https://docs.docker.com/v17.09/docker-for-mac/install/)
 
-# **Optional:** Use play-with-docker
+  1.1 [Docker for Windows](https://docs.docker.com/v17.09/docker-for-windows/install/)
+  
+  1.2 [Docker for Mac](https://docs.docker.com/v17.09/docker-for-mac/install/)
+  
+
+## **Optional:** Use play-with-docker
 If you don't want to install Docker, an alternative is to use [Play-With-Docker](http://play-with-docker.com). Play-With-Docker is a website where you can run terminals directly from your browser that have Docker installed. All of the labs for this course can be run on Play-With-Docker, though we recommend installing docker locally on your host, so that you can continue your docker journey when this course has completed. To use Play-With-Docker, navigate to http://play-with-docker.com in your browser.
 
 ## Steps:
