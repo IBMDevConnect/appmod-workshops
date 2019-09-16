@@ -10,3 +10,14 @@
 8. DevOps- CI/CD
 9. Helm Charts
 10. Monitoring & Logging
+
+
+## Contributors
+
+* Mangesh Patankar
+* Shipra Jain
+* Mamatha Busi
+* Rachana V
+* Saurav Raiguru
+* Ishani Pandey
+* Riya Mary Roy
