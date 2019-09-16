@@ -12,9 +12,9 @@ The first part of this lab, we will run our first container, and learn how to in
 
 1. Install Docker
 
-  1.1 [Docker for Windows](https://docs.docker.com/v17.09/docker-for-windows/install/)
+  * [Docker for Windows](https://docs.docker.com/v17.09/docker-for-windows/install/)
   
-  1.2 [Docker for Mac](https://docs.docker.com/v17.09/docker-for-mac/install/)
+  * [Docker for Mac](https://docs.docker.com/v17.09/docker-for-mac/install/)
   
 
 ## **Optional:** Use play-with-docker
