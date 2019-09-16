@@ -42,9 +42,9 @@ Once the cluster is provisioned, Cluster will be shown in Normal State.
 
 ## 3. Create a namespace in Container Registry
 
-1. Create `Container Registry` service in IBM Cloud
+1. Create [Container Registry](https://cloud.ibm.com/kubernetes/catalog/registry) service in IBM Cloud
 
-2. Create a `namespace` within the container registry service
+2. Create a `namespace` within the container registry service`Namespace have to be created in the same region cluster has been deployed`
 
 ## 4. Access Kubernetes Cluster using Web Terminal
 
