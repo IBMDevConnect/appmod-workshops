@@ -9,29 +9,29 @@
 
 3. Click on **ACCESS** in the Kubernetes cluster page and click on **Enable Toolchain** 
 
-![DevOps](images/main.png)
+![DevOps](https://github.com/IBMDevConnect/ibmdevday2019-cloud/blob/master/cicdworkshop/images/main.png)
 
 4. Click on **Create** in the **Develop a Kubernetes app with Helm** option
 
-![DevOps](images/1.png)
+![DevOps](https://github.com/IBMDevConnect/ibmdevday2019-cloud/blob/master/cicdworkshop/images/1.png)
 
 5. In the redirected page, scroll down and, click CREATE next to **IBM Cloud API Key** Wait for the values to get auto populated and click on **CREATE** the toolchain.
 
-![DevOps](images/7.png)
+![DevOps](https://github.com/IBMDevConnect/ibmdevday2019-cloud/blob/master/cicdworkshop/images/7.png)
 
 6. Click Delivery Pipeline and you can see the BUILD, VALIDATE and PROD stage(as shown below).
 
-![DevOps](images/6.png)
+![DevOps](https://github.com/IBMDevConnect/ibmdevday2019-cloud/blob/master/cicdworkshop/images/6.png)
 
-![DevOps](images/new-main.png)
+![DevOps](https://github.com/IBMDevConnect/ibmdevday2019-cloud/blob/master/cicdworkshop/images/new-main.png)
 
 7. Click on **Deploy Helm Chart** within PROD stage to see the logs.
 
-![DevOps](images/2.png)
+![DevOps](https://github.com/IBMDevConnect/ibmdevday2019-cloud/blob/master/cicdworkshop/images/2.png)
 
 8. Scroll down and VIEW the application by clicking in the URL mentioned near **VIEW THE APPLICATION AT**
 
-![DevOps](images/5.png)
+![DevOps](https://github.com/IBMDevConnect/ibmdevday2019-cloud/blob/master/cicdworkshop/images/5.png)
 
 ## Task 2: Update the application and redeploy it
 
