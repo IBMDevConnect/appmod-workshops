@@ -1,6 +1,6 @@
 # Develop a Kubernetes app with Helm using Continuous Delivery & Continuous Integration
 
-This tutorial walks you through the process setting up a continuous integration and delivery pipeline for containerized applications running on the Kubernetes Service. You will learn how to set up source control, then build, test and deploy the app.
+Learn how to create an application in IBM Cloud™ by using a basic starter kit and a Kubernetes toolchain, and continuously deliver the app to a secure container in IBM® Cloud Kubernetes Service. Your continuous integration DevOps pipeline can be configured so that your code changes are automatically built and propagated to the app that’s in the Kubernetes cluster. If you already have a pipeline, you can connect it to your app.
 
 ## Steps:
 
@@ -22,6 +22,10 @@ This tutorial walks you through the process setting up a continuous integration 
 ![DevOps](https://github.com/IBMDevConnect/ibmdevday2019-cloud/blob/master/cicdworkshop/images/7.png)
 
 6. Click Delivery Pipeline and you can see the BUILD, VALIDATE and PROD stage(as shown below).
+
+The Build stage pulls the source code from your repository. It then runs jobs to compile or otherwise process the code to produce artifacts suitable for deployment. Each job runs in its own container. The artifacts are passed to follow-on stages through the build archive directory in the container. By default, this directory is the same as the directory where the source code was checked out. The Simple build job type passes the source code from your repo on as the result without modifying it.
+
+The Deploy stage contains jobs that deploy the artifacts created by the Build stage.
 
 ![DevOps](https://github.com/IBMDevConnect/ibmdevday2019-cloud/blob/master/cicdworkshop/images/6.png)
 
@@ -50,3 +54,5 @@ This tutorial walks you through the process setting up a continuous integration 
 5. Goto Delivery Pipeline to see the changes getting updated automatically and refresh the URL to see the updates you have made.
 
 Congratulations you have completed the lab! 
+
+You have created a toolchain that deploys a "Hello World" app to a secure container in a Kubernetes cluster. You changed a message in the app and tested your change, and when you pushed the change to the repo, the delivery pipeline automatically redeployed the app!
