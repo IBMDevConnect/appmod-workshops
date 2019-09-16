@@ -34,30 +34,33 @@ Let's investigate how Helm can help us focus on other things by letting a chart 
 
 `$ git clone https://github.com/IBMDevConnect/helm101`
 
-2. Install Tiller
+2. Install Tiller. To maintain cluster security, set up Tiller with a service account and cluster role binding in your cluster.
+
 
     ```
     $ cd helm101/tiller/
     $ kubectl apply -f deployment.yaml
     $ kubectl apply -f service.yaml
+    ```
+ Create a Kubernetes service account and cluster role binding for Tiller in the `kube-system` namespace of your cluster.   
     
+    ```
     $ kubectl create serviceaccount --namespace kube-system tiller
     $ kubectl create clusterrolebinding tiller-cluster-rule --clusterrole=cluster-admin --serviceaccount=kube-system:tiller
     $ kubectl patch deploy --namespace kube-system tiller-deploy -p '{"spec":{"template":{"spec":{"serviceAccount":"tiller"}}}}'
-    
     $ kubectl create namespace helm-demo
-    ```   
+    ```
     
  3. Install the app as a Helm chart:   
  
     ```
-    Go back to $ cd linux-amd64
+    $ ../cd linux-amd64 (Go back to linux-amd64 folder)
     
-    $ ./helm install ../helm101/charts/guestbook/ --generate-name --namespace helm-demo
+    $ ./helm install ./helm101/charts/guestbook/ --generate-name --namespace helm-demo
     
     Try below command, if previous command is throwing an error
     
-    $ ./helm install ../helm101/charts/guestbook/ --namespace helm-demo --name guestbook-demo
+    $ ./helm install ./helm101/charts/guestbook/ --namespace helm-demo --name guestbook-demo
     ```
   
     The chart install performs the Kubernetes deployments and service creations of the redis master and slaves, and the guestbook app, as one. This is because the chart is a collection of files that describe a related set of Kubernetes resources and Helm manages the creation of these resources via the Kubernetes API.    
@@ -127,7 +130,7 @@ We'll update the previously deployed `guestbook-demo` application by using Helm.
 
 1. Update the application:
 
-    ```$ helm upgrade guestbook-demo ./guestbook --set redis.slaveEnabled=false,service.type=NodePort --namespace helm-demo```
+    ```$ helm upgrade guestbook-demo ./helm101/charts/guestbook --set redis.slaveEnabled=false,service.type=NodePort --namespace helm-demo```
     
     A Helm upgrade takes an existing release and upgrades it according to the information you provide. You should see output similar to the following:
     
