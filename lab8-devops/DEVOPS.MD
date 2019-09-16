@@ -1,5 +1,7 @@
 # Develop a Kubernetes app with Helm using Continuous Delivery & Continuous Integration
 
+This tutorial walks you through the process setting up a continuous integration and delivery pipeline for containerized applications running on the Kubernetes Service. You will learn how to set up source control, then build, test and deploy the app.
+
 ## Steps:
 
 1. Create a [CONTINUOUS DELIVERY](https://cloud.ibm.com/catalog/services/continuous-delivery) service in IBM Cloud.
@@ -15,7 +17,7 @@
 
 ![DevOps](https://github.com/IBMDevConnect/ibmdevday2019-cloud/blob/master/cicdworkshop/images/1.png)
 
-5. In the redirected page, scroll down and, click CREATE next to **IBM Cloud API Key** Wait for the values to get auto populated and click on **CREATE** the toolchain.
+5. In the redirected page, scroll down and, click CREATE next to **IBM Cloud API Key** Wait for the values to get auto populated and click on **CREATE** the toolchain. `SELECT same region of the deployed cluster region while creating the toolchain`
 
 ![DevOps](https://github.com/IBMDevConnect/ibmdevday2019-cloud/blob/master/cicdworkshop/images/7.png)
 
@@ -47,4 +49,4 @@
 
 5. Goto Delivery Pipeline to see the changes getting updated automatically and refresh the URL to see the updates you have made.
 
-Congratulations you have completed the lab!
+Congratulations you have completed the lab! 
