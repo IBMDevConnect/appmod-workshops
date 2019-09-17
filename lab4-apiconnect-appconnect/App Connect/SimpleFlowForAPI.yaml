@@ -1,0 +1,96 @@
+$integration: 'http://ibm.com/appconnect/integration/v2/integrationFile'
+integration:
+  type: api
+  trigger-interfaces:
+    trigger-interface-1:
+      triggers:
+        createDemo:
+          assembly:
+            $ref: '#/integration/assemblies/assembly-1'
+          input-context:
+            data: Demo
+          output-context:
+            data: Demo
+      options:
+        resources:
+          - business-object: Demo
+            model:
+              $ref: '#/models/Demo'
+            triggers:
+              create: createDemo
+      type: api-trigger
+  action-interfaces:
+    action-interface-1:
+      type: api-action
+      business-object: mail
+      connector-type: gmail
+      account-name: Account 1
+      actions:
+        CREATE: {}
+  assemblies:
+    assembly-1:
+      assembly:
+        execute:
+          - create-action:
+              name: Gmail Create email
+              target:
+                $ref: '#/integration/action-interfaces/action-interface-1'
+              map:
+                mappings:
+                  - Body:
+                      template: >-
+                        Hello Team, This is to let you know that we have a team
+                        meeting today, see you there. Thanks.
+                  - Subject:
+                      template: Meeting Alert
+                  - To:
+                      template: '{{$Request.Email}}'
+                $map: 'http://ibm.com/appconnect/map/v1'
+                input:
+                  - variable: Request
+                    $ref: '#/trigger/payload'
+          - response:
+              name: response-1
+              reply-maps:
+                - title: Demo successfully created
+                  status-code: '201'
+                  map:
+                    $map: 'http://ibm.com/appconnect/map/v1'
+                    input:
+                      - variable: Request
+                        $ref: '#/trigger/payload'
+                      - variable: GmailCreateemail
+                        $ref: '#/node-output/Gmail Create email/response/payload'
+                    mappings:
+                      - Email:
+                          template: '{{$Request.Email}}'
+                      - FirstName:
+                          template: '{{$Request.FirstName}}'
+                      - LastName:
+                          template: '{{$Request.LastName}}'
+                  input:
+                    - variable: Request
+                      $ref: '#/trigger/payload'
+                    - variable: GmailCreateemail
+                      $ref: '#/node-output/Gmail Create email/response/payload'
+  name: SimpleFlowForAPI
+models:
+  Demo:
+    name: Demo
+    properties:
+      FirstName:
+        required: false
+        id: true
+        type: string
+      LastName:
+        required: false
+        id: false
+        type: string
+      Email:
+        required: false
+        id: false
+        type: string
+    plural: Demo
+    description: ' '
+    operations:
+      create: '#/integration/assemblies/assembly-1'
