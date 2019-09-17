@@ -23,6 +23,7 @@ Then, make sure that you meet the prerequisites for your operating system and fo
 This task covers how to install IBM Transformation Advisor locally on Linux or MacOS. Before you start, ensure that the following products are installed:
 
 * Docker: [https://docs.docker.com/docker-for-mac/install/](https://docs.docker.com/docker-for-mac/install/)
+
 [https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-engine---community-1](https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-engine---community-1)
   
 * Docker Compose: [https://docs.docker.com/compose/install/](https://docs.docker.com/compose/install/)
