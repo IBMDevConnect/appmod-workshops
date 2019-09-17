@@ -74,4 +74,4 @@ You can use IBM Log Analysis with LogDNA to manage system and application logs i
     
 	b. Click on View LogDNA to launch the dashboard
     
-Congratulations, you have completed the lab! You have learnt how to add logging features with LogDNA in the IBM Cloud Kubernetes cluster.
+Congratulations, you have completed the lab! You have learnt how to stream logs with LogDNA from the IBM Cloud Kubernetes Cluster.
