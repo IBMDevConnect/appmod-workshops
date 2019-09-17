@@ -5,7 +5,7 @@
 3. Securing Containers
 4. API Connect & App Connect
 5. Transformation Advisor
-6. Macroservices
+6. Refactoring into microservices
 7. Kabanero-Appsody-Codewind
 8. DevOps- CI/CD
 9. Helm Charts
@@ -20,4 +20,5 @@
 * Rachana V
 * Saurav Raiguru
 * Ishani Pandey
+* Ritu Maheshwari
 * Riya Mary Roy
