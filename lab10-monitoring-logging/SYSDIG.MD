@@ -88,7 +88,7 @@ IBM® Cloud Monitoring with Sysdig is a cloud-native, and container-intelligence
     
 	   `curl -sL https://ibm.biz/idt-installer | bash`
        
-	6.3 Go to dashabord ->cluster->mycluster(clustername)
+	6.3 Go to dashboard ->cluster->mycluster(clustername)
     
 	6.4 Click on mycluster(clustername)
     
