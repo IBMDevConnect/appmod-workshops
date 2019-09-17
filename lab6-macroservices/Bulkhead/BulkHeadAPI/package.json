@@ -1,0 +1,25 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "boom": "^7.3.0",
+    "cors": "^2.8.5",
+    "delay": "^4.1.0",
+    "express": "^4.16.4",
+    "http": "0.0.0",
+    "httpdispatcher": "^2.1.2",
+    "inquirer": "^6.2.2",
+    "jquery": "^3.3.1",
+    "jsdom": "^13.2.0",
+    "opossum": "^1.10.1",
+    "semaphore": "^1.1.0"
+  }
+}
