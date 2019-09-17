@@ -10,27 +10,27 @@ IBM® Cloud Monitoring with Sysdig is a cloud-native, and container-intelligence
 
 ## Steps:
 
-1. Login to IBM cloud
+1. Login to IBM Cloud
 
 2. Provide access to your user for sysdig monitoring 
 
-⋅⋅1.From the menu bar, click Manage > Access (IAM).
+    1.From the menu bar, click Manage > Access (IAM).
 
-⋅⋅2. Create an access group: sysdig-admins
+    2. Create an access group: sysdig-admins
 
-	2.1. Select Access Groups.
+	   2.1. Select Access Groups.
     
-	2.2. Click Create.
+	   2.2. Click Create.
     
-	2.3 Enter the name of the access group: sysdig-admins.
+	   2.3 Enter the name of the access group: sysdig-admins.
     
-	2.4 [Optional] Enter a description.
+	   2.4 [Optional] Enter a description.
     
-	2.5 Click create.
+	   2.5 Click create.
     
-	2.6 Click Add User.
+	   2.6 Click Add User.
     
-	2.7 Select the your user and click on add to group.
+	   2.7 Select the your user and click on add to group.
 
 3. Add access policy to the user, which is going to use Sysdig for monitoring
 
@@ -94,16 +94,18 @@ IBM® Cloud Monitoring with Sysdig is a cloud-native, and container-intelligence
     
 	6.5 From the access tabs execute the command specified in Kataconda terminal
     
-		```ibmcloud login -a cloud.ibm.com -r us-south -g default (change the region based on the cluster region)
+		```
+        ibmcloud login -a cloud.ibm.com -r us-south -g default (change the region based on the cluster region)
         
 		ibmcloud ks cluster config --cluster replace_with_your_cluster_name
         
 		(below command will come as output of executing above command)
         
-        export KUBECONFIG=%HOMEPATH%\.bluemix\plugins\container-service\clusters\blqt6b8d062qlkfhap0g\kube-config-hou02-mycluster.yml```
+        export KUBECONFIG=%HOMEPATH%\.bluemix\plugins\container-service\clusters\blqt6b8d062qlkfhap0g\kube-config-hou02-mycluster.yml
 		
         Copy paste the command to your prompt and execute it.
-		
+		```
+        
 	6.6. Execute command `ibmcloud target --cf` to select space
     
 	6.7 execute the command copied at step 5.2 
