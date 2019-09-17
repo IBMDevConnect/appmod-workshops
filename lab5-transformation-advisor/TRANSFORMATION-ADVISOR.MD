@@ -48,7 +48,7 @@ Linux: http://< host name >:< port >
 
 MacOS: http://< IP Address >:< port > 
 
-![GitHub Logo](images/home_page.png)
+![GitHub Logo](images/landingPage.png)
 
 
 
