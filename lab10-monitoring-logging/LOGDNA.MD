@@ -22,25 +22,25 @@ You can use IBM Log Analysis with LogDNA to manage system and application logs i
     
 	d. Click on Access policies
     
-	e. Click on Assign Access to resource group
+	e. Click on `Assign Access` and select `Assign Access within a resource group`
     
-	f. Select default as resource Group and provide Viewer Access. Secrvices let it be default and click assign
+	f. Select `default` as Resource Group and provide `Viewer` Access. Services let it be default and click assign
     
-	g. Click on Access policies 
+	g. Click on `Access policies` again
     
-	h. Click on Assign Access to resource 
+	h. Click on `Assign Access` and select `Assign Access to resource` 
     
-	i. Select Kubernates cluster as service , Select All Region in Regions and All Instance  in Cluster
+	i. Select `Kubernetes Cluster` as service , Select `All Region` in Regions and `All Instance`  in Cluster
     
-	j. Provide Editor and Administrator role and click assign
+	j. Provide `Editor and Administrator` role and click assign
     
-	k. Click on Access policies 
+	k. Click on`Access policies` again
     
-	l. Click on Assign Access to resource 
+	l. Click on `Assign Access` and select `Assign Access to resource `
     
-	m. Select IBM Log Analysis with logDNA s service for All Regions , All Instance 
+	m. Select `IBM Log Analysis with logDNA`  service for All Regions , All Instance 
     
-	n. Provide EDitor , Viewer and Manager roles and click Assign Service
+	n. Provide `Editor , Viewer and Manager` roles and click `Assign Service`
     
 2. Create a logDNA service
 
@@ -54,26 +54,24 @@ You can use IBM Log Analysis with LogDNA to manage system and application logs i
     
 3. Get ingestion key to be used by agent
 
-	a. click on View LogDNA, to open LogDNA dashbaOn Dashboard, click on settings ->Oraganisation->APIkeys and copy the key present there
+	a. click on `View LogDNA`, to open LogDNA Dashboard, click on `settings ->Oraganisation->APIkeys` and copy the Ingestion key present there
 
-4. Configure kuberantes cluster to send logs 
+4. Configure Kubernetes cluster to send logs 
 
 	a. Go to Dashboard->Cluster->Mycluster
     
 	b. open web terminal(beta)
     
-	c. Execute commands 1 and 2 listed on Access tab and set path 
+	c. execute  `kubectl create secret generic logdna-agent-key --from-literal=logdna-agent-key=replace_with_logDNA_ingestion_key_copied_at_step_3a`
     
-	d. execute  kubectl create secret generic logdna-agent-key --from-literal=logdna-agent-key=<logDNA_ingestion_key copied at step 3a>
+	d. execute `kubectl create -f https://assets.us-south.logging.cloud.ibm.com/clients/logdna-agent-ds.yaml`
     
-	e. kubectl create -f https://assets.us-south.logging.cloud.ibm.com/clients/logdna-agent-ds.yaml
-    
-	f. kubectl get pods
+	e. execute `kubectl get pods`
 
 5. Launch LogDNA Dashboard
 
 	a. Go to Navigation Menu->Observability->Logging
     
-	b. Click on View LogDNA to launch the dashabord
+	b. Click on View LogDNA to launch the dashboard
     
 Congratulations, you have completed the lab! You have learnt how to add logging features with LogDNA in the IBM Cloud Kubernetes cluster.
