@@ -41,8 +41,16 @@ unzip transformationAdvisor.zip
 ![GitHub Logo](images/install_options.png)
 
 5) After the installation is complete, you can access Transformation Advisor locally at the following URLs. The host name or IP address and port are provided by the installation program.
+
+![GitHub Logo](images/install_complete.png)
+
 Linux: http://< host name >:< port >
+
 MacOS: http://< IP Address >:< port > 
+
+![GitHub Logo](images/home_page.png)
+
+
 
 ### For Windows:
 
