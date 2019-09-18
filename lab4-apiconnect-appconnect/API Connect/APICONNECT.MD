@@ -116,7 +116,7 @@ To add a new model to a LoopBack project using the API Designer, complete the fo
 ![](img/Picture18.png)
 5) In the Properties, click the Add property icon . \
 6) In the Property Name text field, enter zip_code. \
-7) For Type, select number. \
+7) For Type, select number \
 8) Select Required to make the property required. This means that it must have a value when you add or update a model instance. \
 9) Select ID to ensure that the property has a unique identifier. For now, keep the default values for the other settings:
 ![](img/Picture20.png)
