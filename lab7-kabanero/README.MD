@@ -2,17 +2,17 @@
 
 We will be using Appsody from Kabanero Project for this hands on.
 
-## 1. Sign up on Docker
+### 1. Sign up on Docker
 https://hub.docker.com/
 
-## 2. Get the environment
+### 2. Get the environment
 
 https://www.katacoda.com/courses/ubuntu/playground1804
 
 Sign in using your gmail id.
 
 
-## 3. Check the OS
+### 3. Check the OS
 
 ```
 $ cat /etc/os-release
@@ -33,39 +33,37 @@ BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
 PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
 VERSION_CODENAME=bionic
 UBUNTU_CODENAME=bionic
+
 ```
 
 
-## 4. Install Appsody
+### 4. Install Appsody
 
 Get installable
+
 ```
 $ wget https://github.com/appsody/appsody/releases/download/0.2.8/appsody_0.2.8_amd64.deb
-```
-
-Install Appsody
-```
 $ sudo apt install ./appsody_0.2.8_amd64.deb
-
 ```	
 
-## 5. Login to IBM Cloud CLI
+
+### 5. Login to IBM Cloud CLI
 
 https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started
 
-## 6. Connect to your Kubernetes cluster created on IBM Cloud.
+### 6. Connect to your Kubernetes cluster created on IBM Cloud.
 
 Login to IBM Cloud UI. 
 From the Dashboard, click on the Kubernetes cluster. Click on Connect via CLI. 
 Follow the instructions in the pop up window.
 
-## 7. Login to docker with your username/password. Sign up if you are a new user.
+### 7. Login to docker with your username/password. Sign up if you are a new user.
 
 ```
 $ docker login
 ```
 
-## 8. Create Projects Appsody
+### 8. Create Projects Appsody
 
 
 First, choose a development stack. To see all the available stacks, run:
@@ -111,7 +109,7 @@ Fetch the external IP of your cluster with the command:
 $ <fetch command for external id>
 ```
 
-## 9. Check your application is running
+### 9. Check your application is running
 
 Open your web browser with http://<external-ip-cluster>:<port-no>
 
@@ -127,7 +125,7 @@ You should see output as
 "Hello from Appsody!"
 ```
 
-## 10. Change the code
+### 10. Change the code
 
 Now let's try changing the code. Edit the file app.js to output something other than "Hello from Appsody!". 
 
