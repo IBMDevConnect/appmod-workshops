@@ -18,12 +18,19 @@ In this lab, you will learn how to secure your images and fix the vulnerabilites
 
 Use the button above to deploy this same application to IBM Cloud. This option will create a deployment pipeline, complete with a hosted Git lab project and DevOps toolchain. You will have the option of deploying to either Cloud Foundry or a Kubernetes cluster.
 
-Step 1: 
+Step 1: Click on `Create` button to create the app
 
+Step 2: In the redirected page, Click on `Configure Continuous Delivery`.Enable continuous delivery to automate builds, tests, and deployments through Delivery Pipeline, GitLab, and more.
+
+Step 3: In the popup, Select `Deploy to IBM Kubernetes Service` and select the region where cluster is deployed and select the cluster. Click `Next`
+
+Step 4: In next step, Select the region in which cluster has been deployed and click on `Create`.
+
+Step 5: A toolchain have been created now with the starter application. Click on `View toolchain`. This will redirect you to Toolchain page.
 
 ### Security using Vulnerability Advisor
 
-1. Go to the toolchain you created under DevOps toolchains and click the Delivery Pipeline tile.
+1. Click the Delivery Pipeline tile within the toolchain.
 
 2.  Follow the steps shown in below video:
 
