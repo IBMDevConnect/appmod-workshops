@@ -85,13 +85,13 @@ https://cloud.ibm.com/login
 ![GitHub Logo](images/dashboard.png)
 
 
-_** From the Dashboard, click on the Kubernetes cluster.  **_
+_ ** From the Dashboard, click on the Kubernetes cluster.  ** _
 ![GitHub Logo](images/cluster.png)
 
-_** Click on Connect via CLI. _**
+_ ** Click on Connect via CLI. ** _
 ![GitHub Logo](images/connectcli.png)
 
-_** A pop-up window will appear. _**
+_ ** A pop-up window will appear. ** _
 
 ![GitHub Logo](images/popup.png)
 ![GitHub Logo](images/popup2.png)
