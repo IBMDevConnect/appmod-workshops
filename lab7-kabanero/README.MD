@@ -154,12 +154,16 @@ $ docker login
 ```
 -> Build the container
 
-``` $ appsody build ```
+``` 
+$ appsody build 
+```
 
 -> Tag and push the image to docker hub
 
-```$ docker tag <my-project> <docker_user>/<my-project> ```
-```$ docker push <docker_user>/<my-project> ```
+```
+$ docker tag <my-project> <docker_user>/<my-project> 
+$ docker push <docker_user>/<my-project> 
+```
 
 -> Deploy. 
 
@@ -192,7 +196,7 @@ Fetch the external IP of your cluster with the command:
 $ <fetch command for external id>
 ```
 
-### 9. Check your application is running
+### 12. Check your application is running
 
 Open your web browser with http://<external-ip-cluster>:<port-no>
 
