@@ -82,14 +82,19 @@ Go to browser and login to IBM Cloud UI.
 
 https://cloud.ibm.com/login
 
+![GitHub Logo](images/dashboard.png)
+
+
 From the Dashboard, click on the Kubernetes cluster. 
-![GitHub Logo](/images/cluster.png)
+![GitHub Logo](images/cluster.png)
 
 Click on Connect via CLI. 
-![GitHub Logo](/images/connectcli.png)
+![GitHub Logo](images/connectcli.png)
 
 A pop-up window will appear.
-![GitHub Logo](/images/popup.png)
+
+![GitHub Logo](images/popup.png)
+![GitHub Logo](images/popup2.png)
 
 Execute the commands from your pop-up window on the command prompt.
 
