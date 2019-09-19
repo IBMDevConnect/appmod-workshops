@@ -49,6 +49,31 @@ $ sudo apt install ./appsody_0.2.8_amd64.deb
 
 ### 5. Login to IBM Cloud CLI
 
+For Mac or Linux:
+
+-> To install latest version of the IBM Cloud CLI, run the command:
+
+`$ curl -sL https://ibm.biz/idt-installer | bash `
+
+-> To verify that the CLI and Developer tools were installed successfully, run the help command:
+
+`$ ibmcloud dev help` 
+
+Output lists the usage instructions, the current version, and the supported commands.
+
+-> Now configure your environment, log in to IBM Cloud with your IBMid. 
+
+   `$ ibmcloud login`
+
+-> To access Cloud Foundry services, you must specify a Cloud Foundry org and space. You can run the following command to interactively identify the org and space:
+
+   `$ ibmcloud target --cf`
+
+   Or, if you know which org and space that the service belongs to, you can use the following command:
+   
+   `$ ibmcloud target -o <value> -s <value>`
+
+The above commands are also available in the web page: 
 https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started
 
 ### 6. Connect to your Kubernetes cluster created on IBM Cloud.
