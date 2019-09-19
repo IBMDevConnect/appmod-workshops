@@ -193,7 +193,7 @@ Note the port number that the project is deployed on.
 
 Fetch the external IP of your cluster with the command: 
 ```
-$ <fetch command for external id>
+$ kubectl get node -o wide
 ```
 
 ### 12. Check your application is running
@@ -207,10 +207,7 @@ Open New terminal
 $ curl http://[external-ip-cluster]:[port-no]
 ```
 
-You should see output as
-```
-"Hello from Appsody!"
-```
+You should see the message output. 
 
 
 When you're all done, you can stop the environment.
