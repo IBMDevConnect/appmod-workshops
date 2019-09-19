@@ -78,18 +78,22 @@ https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started
 
 ### 6. Connect to your Kubernetes cluster created on IBM Cloud.
 
-Login to IBM Cloud UI. 
-From the Dashboard, click on the Kubernetes cluster. Click on Connect via CLI. 
-Follow the instructions in the pop up window.
+Go to browser and login to IBM Cloud UI. 
 
-### 7. Login to docker with your username/password. Sign up if you are a new user.
+https://cloud.ibm.com/login
 
-```
-$ docker login
-```
+From the Dashboard, click on the Kubernetes cluster. 
+![GitHub Logo](/images/cluster.png)
 
-### 8. Create Projects Appsody
+Click on Connect via CLI. 
+![GitHub Logo](/images/connectcli.png)
 
+A pop-up window will appear.
+![GitHub Logo](/images/popup.png)
+
+Execute the commands from your pop-up window on the command prompt.
+
+### 7. Create Projects Appsody
 
 First, choose a development stack. To see all the available stacks, run:
 
@@ -108,7 +112,61 @@ $ cd illustration
 $ appsody init nodejs-express
 ```
 
-Build the container, push the image to docker hub and deploy the development container on to the Kubernetes cluster:
+### 8. Start the development container:
+
+``` $ appsody run ```
+
+### 9. Check your application is running
+
+Now the project is running in a docker container, and the container is linked to the project source code on your local system.
+Great! 
+
+Open New terminal
+```
+$ curl http://localhost:3000
+```
+OR open in browser: http://localhost:3000
+
+You should see out put as
+```
+"Hello from Appsody!"
+```
+
+### 10. Change the code
+
+Now let's try changing the code. Edit the file app.js to output something other than "Hello from Appsody!". 
+
+When you save the file, Appsody picks up the change and automatically updates the container. 
+
+Run
+
+```
+$ curl http://localhost:3000 
+```
+OR open in browser: http://localhost:3000 to see the new message!
+
+### 11. Now, let's tag and push the container onto docker hub and deploy the image to your IBM Kubernetes cluster.
+
+In the command prompt, login to docker with your username/password. Sign up if you are a new user.
+
+```
+$ docker login
+```
+-> Build the container
+
+``` $ appsody build ```
+
+-> Tag and push the image to docker hub
+
+```$ docker tag <my-project> <docker_user>/<my-project> ```
+```$ docker push <docker_user>/<my-project> ```
+
+-> Deploy. 
+
+``` $ appsody deploy ```
+
+
+One step command to build, tag, push and deploy the development container on to the Kubernetes cluster:
 
 ```
 $ appsody deploy --tag <dockerhub-space>/<app-name>:<version> --push
@@ -149,26 +207,6 @@ You should see output as
 ```
 "Hello from Appsody!"
 ```
-
-### 10. Change the code
-
-Now let's try changing the code. Edit the file app.js to output something other than "Hello from Appsody!". 
-
-Save the file, and re-deploy with a new version tag:
-
-```
-$ appsody deploy --tag <dockerhub-space>/<app-name>:<version> --push
-
-```
-
-Run
-
-```
-$ curl http://<external-ip-cluster>:<port-no> to see the new message!
-```
-OR 
-
-Open your web browser with http://<external-ip-cluster>:<port-no> to see the new message!
 
 
 When you're all done, you can stop the environment.
