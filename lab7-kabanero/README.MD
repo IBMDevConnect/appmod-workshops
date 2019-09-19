@@ -198,13 +198,13 @@ $ <fetch command for external id>
 
 ### 12. Check your application is running
 
-Open your web browser with http://<external-ip-cluster>:<port-no>
+Open your web browser with http://[external-ip-cluster]:[port-no]
 
 OR
 
 Open New terminal
 ```
-$ curl http://<external-ip-cluster>:<port-no>
+$ curl http://[external-ip-cluster]:[port-no]
 ```
 
 You should see output as
