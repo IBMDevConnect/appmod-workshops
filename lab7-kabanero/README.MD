@@ -166,8 +166,24 @@ $ appsody build
 -> Tag and push the image to docker hub
 
 ```
-$ docker tag <my-project> <docker_user>/<my-project> 
-$ docker push <docker_user>/<my-project> 
+$ docker tag <app-name> <docker_user>/<app-name>
+```
+   
+For this appsody project: 
+```
+$ docker tag illustration myDockerUsername/illustration
+```
+
+Now push:
+
+```
+$ docker push <docker_user>/<app-name> 
+```
+
+For this appsody project: 
+
+```
+$ docker push myDockerUsername/illustration 
 ```
 
 -> Deploy. 
