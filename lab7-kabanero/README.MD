@@ -85,13 +85,13 @@ https://cloud.ibm.com/login
 ![GitHub Logo](images/dashboard.png)
 
 
-_ From the Dashboard, click on the Kubernetes cluster. _
+_From the Dashboard, click on the Kubernetes cluster._
 ![GitHub Logo](images/cluster.png)
 
 _ Click on Connect via CLI. _
 ![GitHub Logo](images/connectcli.png)
 
-_ A pop-up window will appear. _
+_A pop-up window will appear._
 
 ![GitHub Logo](images/popup.png)
 ![GitHub Logo](images/popup2.png)
@@ -148,7 +148,7 @@ Run
 ```
 $ curl http://localhost:3000 
 ```
-OR open in browser: http://localhost:3000 to see the new message!
+OR If using Mac/Linux local machine command prompt, open in browser: http://localhost:3000 to see the new message!
 
 ### 11. Now, let's tag and push the container onto docker hub and deploy the image to your IBM Kubernetes cluster.
 
@@ -203,7 +203,7 @@ $ kubectl get node -o wide
 
 ### 12. Check your application is running
 
-Open your web browser with http://[external-ip-cluster]:[port-no]
+If using Mac/Linux local machine command prompt, open your web browser with http://[external-ip-cluster]:[port-no]
 
 OR
 
