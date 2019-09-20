@@ -34,7 +34,7 @@ Step 5: A toolchain have been created now with the starter application. Click on
 
 2.  Follow the steps shown in below video:
 
-![Video](/img/video_1.mov)
+![Video](/img/video_1.gif)
 
 **Please note: Container Registry namespace should be same as the one mentioned in Build Stage of this toolchain.**
 
