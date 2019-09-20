@@ -30,7 +30,7 @@ IBM® Cloud Monitoring with Sysdig is a cloud-native, and container-intelligence
     
 	   2.6 Click Add User.
     
-	   2.7 Select the your user and click on add to group.
+	   2.7 Select the user and click on add to group.
 
 3. Add access policy to the user, which is going to use Sysdig for monitoring
 
