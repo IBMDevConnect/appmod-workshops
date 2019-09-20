@@ -126,5 +126,12 @@ To add a new model to a LoopBack project using the API Designer, complete the fo
 
 11) Click the Save icon to save your changes![](img/Picture23.png)
 
-12) Click All Models to finish editing the model.
-This completes adding a new data source and model to the weather-data LoopBack project.
+12) Click All Models to finish editing the model
+
+This completes adding a new data source and model to the weather-data LoopBack project
+
+## Publishing API CONNECT to IBM CLOUD
+
+Kindly refer to the video below to understand how we publish the API Connect projects to the IBM Cloud Catalog.
+
+[![Publish Api Connect to IBM Cloud](https://img.youtube.com/vi/U4meXJWV4us/maxresdefault.jpg)](https://www.youtube.com/watch?v=U4meXJWV4us)
