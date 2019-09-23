@@ -149,7 +149,7 @@ Transformation Advisor organizes your legacy server scans into workspaces and co
 
     ![Migration Plan](images/ss6.png)
 
-8. On the left you should see a list of files generated to aid the migration of the app to Liberty running in ICP . On the right click the link **View the steps ->**
+8. On the left you should see a list of files generated to aid the migration of the app to Liberty running in IBM Cloud Pak for Applications on Private Cloud . On the right click the link **View the steps ->**
 
     ![View the steps](images/ss7.png)
 
