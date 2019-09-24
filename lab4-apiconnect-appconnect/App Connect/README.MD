@@ -101,7 +101,7 @@ This is how event driven flows work, scroll down to see some sample flows in Sam
 
 ![](img/plusslack.png)
 
-7. Configure the slack node. If its not connected, click on connect and give access to your account/default account that you want to set up. Check if your node is connected to your account. Refresh the page to see changes and make sure you see your account details when you click on the node.
+7. Configure the slack node. If it's not connected, click on connect and give access to your account/default account that you want to set up. Check if your node is connected to your account. Refresh the page to see changes and make sure you see your account details when you click on the node.
 You can auto match the node fields or add them manually. Here, I am adding auto matched fields which are the node properties that we have added to the flow in the beginning.
 
 ![](img/slackconfigure.png)
