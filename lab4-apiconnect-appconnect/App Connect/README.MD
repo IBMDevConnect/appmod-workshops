@@ -32,9 +32,7 @@ To create a new event driven flow, ```New -> Event-driven flow```
 
 ![](img/newflow.png)
 
-2. To add applications to your flow, Click on '+' and select applications that you want to add to your flow. Here, we are creating a simple flow to send emails at some interval of time.
-
-![](img/picture7.png)
+2. To add applications to your flow, Click on '+' and select applications that you want to add to your flow. Here, we are creating a simple flow to send slack messages at some interval of time.
 
 3. To be able to schedule events, there is a tool called scheduler in the toolbox. To add this to your flow, ```+ -> Toolbox -> Scheduler```
 
@@ -116,8 +114,6 @@ You can auto match the node fields or add them manually. Here, I am adding auto 
 
 10. Now that the flow creation is done, we have to create an API to call the flow. To do this go to manage section of the dashboard.
 
-![](img/picture24.png)
-
 11. ``` Manage -> Scroll```
 
 ![](img/manage.png)
@@ -146,41 +142,14 @@ You can auto match the node fields or add them manually. Here, I am adding auto 
 
 ![](img/aoutput.png)
 
-Congratulations, You have completed the lab. You have learnt <to be filled by Rachana>
+Congratulations, You have completed the lab. You have learnt
+1. How to create a basic event-driven flow that sends a simple message at scheduled time using APP Connect on IBM Cloud.
+
+2. How to create a basic flow for API that sends a simple message on slack when the API operation is called using APP Connect on IBM Cloud.
 
 You can try out the below **Next steps** to explore further on App Connect.
 
 # Next Steps
-
-## [Integration servers with APP connect](https://github.com/rachana5198/APP-Connect-handson#integration-servers-with-app-connect)
-
-1. Click New > Import a BAR file.
-
-![](img/is1.png)
-
-2. Either click the “Import a BAR file” dialog box to select a BAR file from your file system, or drag a BAR file from your file system to the dialog box.
-
-![](img/is2.png)
-
-3. Click Import. An integration server is created, and a tile is added to the dashboard to represent it. Initially, you’ll see the status as “Preparing”, which means that the contents of the BAR file are being unpacked onto the integration server. When preparation has finished, the status will show as “Stopped”, indicating that the integration server is ready to be configured and started. If you see a message saying that preparation failed, click Try again in the message to start preparation again. You can see a summary of the contents of the integration server by clicking the arrow. The arrow icon that allows you to see a summary of the contents of an integration server on the tile.
-
-4. Open the integration server by clicking the tile, or expanding the tile menu (⋮) and then clicking Open.
-
-5. Configure the integration server and start it.
-
-6. When you’ve completed configuration, return to the App Connect on IBM Cloud dashboard and start the integration server by opening the tile menu and then clicking Start.
-
-![](img/startis.png)
-
-7. You can also use the tile menu to delete or update the BAR file. The “update” option allows you to upload a new version of a BAR file. On clicking the integration server that you have uploaded, it looks something like this:
-
-![](img/viewlogs.png)
-
-8. When your integration server is running, you can view logs by opening the integration server and then clicking View logs. ```Server page -> View logs```
-
-![](img/viewlogs.png)
-
-![](img/isoutput.png)
 
 ## [Import and export flows](https://github.com/rachana5198/APP-Connect-handson#import-and-export-flows)
 
@@ -223,3 +192,34 @@ You can try out the below **Next steps** to explore further on App Connect.
 ![](img/sf5.png)
 6. Build an API to create or update leads in ```Salesforce``` based on a ```Google Sheets spreadsheet```.
 ![](img/sf6.png)
+
+## [Integration servers with APP connect](https://github.com/rachana5198/APP-Connect-handson#integration-servers-with-app-connect)
+
+1. Click New > Import a BAR file.
+
+![](img/is1.png)
+
+2. Either click the “Import a BAR file” dialog box to select a BAR file from your file system, or drag a BAR file from your file system to the dialog box.
+
+![](img/is2.png)
+
+3. Click Import. An integration server is created, and a tile is added to the dashboard to represent it. Initially, you’ll see the status as “Preparing”, which means that the contents of the BAR file are being unpacked onto the integration server. When preparation has finished, the status will show as “Stopped”, indicating that the integration server is ready to be configured and started. If you see a message saying that preparation failed, click Try again in the message to start preparation again. You can see a summary of the contents of the integration server by clicking the arrow. The arrow icon that allows you to see a summary of the contents of an integration server on the tile.
+
+4. Open the integration server by clicking the tile, or expanding the tile menu (⋮) and then clicking Open.
+
+5. Configure the integration server and start it.
+
+6. When you’ve completed configuration, return to the App Connect on IBM Cloud dashboard and start the integration server by opening the tile menu and then clicking Start.
+
+![](img/startis.png)
+
+7. You can also use the tile menu to delete or update the BAR file. The “update” option allows you to upload a new version of a BAR file. On clicking the integration server that you have uploaded, it looks something like this:
+
+![](img/viewlogs.png)
+
+8. When your integration server is running, you can view logs by opening the integration server and then clicking View logs. ```Server page -> View logs```
+
+![](img/viewlogs.png)
+
+
+![](img/isoutput.png)
