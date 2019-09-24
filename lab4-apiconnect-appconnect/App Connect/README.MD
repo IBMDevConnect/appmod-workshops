@@ -44,7 +44,7 @@ To create a new event driven flow, ```New -> Event-driven flow```
 
 ![](img/plus.png)
 
-5. To add the next node to the flow, click on '+'. Here, we are adding email component so that we will be able to send emails at scheduled time. To do this, ```+ -> Applications -> Slack -> Create email```
+5. To add the next node to the flow, click on '+'. Here, we are adding email component so that we will be able to send message at scheduled time. To do this, ```+ -> Applications -> Slack -> Create message```
 
 ![](img/slack.png)
 
@@ -53,7 +53,7 @@ To connect your account, ```Click on Slack node -> Connect```. This will redirec
 
 ![](img/connect.png)
 
-7. Configure the slack node with your details and content.
+7. Configure the slack node with your workspace url. If you don't have a [Slack workspace](https://slack.com/create), create a workspace for testing purposes.
 
 ![](img/slack1.png)
 
@@ -93,7 +93,7 @@ This is how event driven flows work, scroll down to see some sample flows in Sam
 
 ![](img/operations.png)
 
-5. Wait for the model to load and then start adding nodes to your flow. I have added a POST method which automatically generated Request and Response nodes. Make sure that the request node has sample data configured in it which is auto-generated. Refresh the page if you are not able to see the changes.
+5. Wait for the model to load and then start adding nodes to your flow. I have added a POST method which automatically generated Request and Response nodes. Make sure that the request node has sample data configured in it which is auto-generated. Refresh the page if you are not able to see the changes. Click on `Implement Flow`.
 
 ![](img/implementflow.png)
 
@@ -142,9 +142,15 @@ You can auto match the node fields or add them manually. Here, I am adding auto 
 
 ![](img/calloperation.png)
 
-17. To check if the API is working, go to the email that you have set in the configuration flow. It will look something like this:
+17. To check if the API is working, go to the Slack channel that you have set in the configuration flow. It will look something like this:
 
 ![](img/aoutput.png)
+
+Congratulations, You have completed the lab. You have learnt <to be filled by Rachana>
+
+You can try out the below **Next steps** to explore further on App Connect.
+
+# Next Steps
 
 ## [Integration servers with APP connect](https://github.com/rachana5198/APP-Connect-handson#integration-servers-with-app-connect)
 
@@ -202,7 +208,6 @@ You can auto match the node fields or add them manually. Here, I am adding auto 
 
 ![](img/final.png)
 
-## Next Steps
 
 ### [Sample flows](https://github.com/rachana5198/APP-Connect-handson#sample-flows)
 
