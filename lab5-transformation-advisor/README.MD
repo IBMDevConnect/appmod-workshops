@@ -95,9 +95,11 @@ ibmcom/transformation-advisor-db:latest
 http://< host >:2221
 
 
-## Exploring Transformation Advisor
+# Exploring Transformation Advisor
 
-In this short lab you'll run Transformation Advisor against the data collected from an instance of WebSphere Application Server V8.5.5 and examine the recommendations provided for a different Java EE applications. You'll  then look at the artifacts generated for one  those apps (the later version of the WebSphere sample app Plants By WebSphere)  for deployment on a Liberty container running in Kubernetes using the migration bundle  generated for this app by Transformation Advisor.
+In this short lab -
+1) You will run Transformation Advisor against the data collected from an instance of WebSphere Application Server V8.5.5 and examine the recommendations provided for a different Java EE applications.
+2) You will  then look at the artifacts generated for one  those apps (the later version of the WebSphere sample app Plants By WebSphere)  for deployment on a Liberty container running in Kubernetes using the migration bundle  generated for this app by Transformation Advisor.
 
 ### Step 1: Launch Transformation Advisor and import data collected from  WebSphere Application Server
 
