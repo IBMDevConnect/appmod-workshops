@@ -159,7 +159,7 @@ Transformation Advisor organizes your legacy server scans into workspaces and co
 
 10. Look through the migration steps. You'll be (more or less) following these steps  if you use this tool to aid in the migration of your own legacy apps to a modern containerized environment.
 
-# Experience Center for TA
+# Experience Centre for TA
 
 See how the IBM Cloud Paks can accelerate your journey to the cloud with access to a hosted environment.
 
