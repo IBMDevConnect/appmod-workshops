@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "inquirer": "^6.2.2",
     "jquery": "^3.3.1",
     "jsdom": "^14.0.0",
